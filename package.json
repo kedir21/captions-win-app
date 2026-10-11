@@ -13,7 +13,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "build:desktop": "cross-env NITRO_PRESET=node-server npm run build",
-    "dist:win": "npm run build:desktop && electron-builder --win nsis"
+    "dist:win": "npm run build:desktop && electron-builder --win nsis --publish never"
   },
   "overrides": {
     "rolldown": "1.2.1"
