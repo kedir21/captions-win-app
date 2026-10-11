@@ -40,3 +40,4 @@ You can also open **GitHub → Actions → Build Windows installer → Run workf
 ### Configure real speech-to-text
 
 The app calls OpenAI Whisper from the server; demo mode is only sample text and is not transcription. Do not put an API key in frontend code or commit it to Git. Before launching the desktop app, configure `OPENAI_API_KEY` in the Windows user environment and restart the app. In PowerShell, `setx OPENAI_API_KEY "your-api-key"` saves it for future processes; close and reopen the app after running this command. OpenAI API usage may incur charges. If the key is missing or billing/quota is unavailable, real transcription will fail clearly rather than silently substituting sample captions.
+# captions-win-app
